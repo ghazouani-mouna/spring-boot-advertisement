@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jmbg.advertisement.service.AdvertisementServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-05-12T21:34:14" hostname="Chemy-MacBook-Pro.local" time="0.055">
+  <properties/>
+  <testcase name="createAdvertisment" classname="com.jmbg.advertisement.service.AdvertisementServiceTest" time="0.025"/>
+  <testcase name="getAllAdvertisements" classname="com.jmbg.advertisement.service.AdvertisementServiceTest" time="0.013"/>
+  <testcase name="getRelevantsAdvertisements" classname="com.jmbg.advertisement.service.AdvertisementServiceTest" time="0.007"/>
+  <testcase name="getIrrelevantsAdvertisements" classname="com.jmbg.advertisement.service.AdvertisementServiceTest" time="0.007"/>
+  <system-out><![CDATA[23:34:04.447 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.462 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:34:04.468 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:34:04.486 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.jmbg.advertisement.service.AdvertisementServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:34:04.496 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jmbg.advertisement.service.AdvertisementServiceTest], using SpringBootContextLoader
+23:34:04.500 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]: class path resource [com/jmbg/advertisement/service/AdvertisementServiceTest-context.xml] does not exist
+23:34:04.502 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]: class path resource [com/jmbg/advertisement/service/AdvertisementServiceTestContext.groovy] does not exist
+23:34:04.502 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:34:04.503 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]: AdvertisementServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:34:04.559 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.641 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jmblanco/Projects/Personal/SpringBoot/spring-boot-advertisement/build/classes/java/main/com/jmbg/advertisement/Application.class]
+23:34:04.644 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.jmbg.advertisement.Application for test class com.jmbg.advertisement.service.AdvertisementServiceTest
+23:34:04.741 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.jmbg.advertisement.service.AdvertisementServiceTest]: using defaults.
+23:34:04.742 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:34:04.759 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1388d9ff, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@79c8051d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@193d4a26, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@10c78da6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45d5e960, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c8cec2a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f13e5e7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2395f31e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@49e180e5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5297c84f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@423b2327, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4eba357d]
+23:34:04.762 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.763 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.763 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.764 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.771 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7d4f6155 testClass = AdvertisementServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@f276be3 testClass = AdvertisementServiceTest, locations = '{}', classes = '{class com.jmbg.advertisement.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@56278deb, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@209b0b9d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3fdcc9a3, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@806cbee2, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@cda6816], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+23:34:04.772 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.772 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.jmbg.advertisement.service.AdvertisementServiceTest]
+23:34:04.792 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-05-12 23:34:10.219  INFO 15529 --- [    Test worker] c.j.a.service.AdvertisementServiceTest   : Starting AdvertisementServiceTest on Chemy-MacBook-Pro.local with PID 15529 (started by jmblanco in /Users/jmblanco/Projects/Personal/SpringBoot/spring-boot-advertisement)
+2019-05-12 23:34:10.222  INFO 15529 --- [    Test worker] c.j.a.service.AdvertisementServiceTest   : No active profile set, falling back to default profiles: default
+2019-05-12 23:34:10.879  INFO 15529 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-12 23:34:10.948  INFO 15529 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 2 repository interfaces.
+2019-05-12 23:34:11.819  INFO 15529 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b770eb7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-12 23:34:12.059  INFO 15529 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-12 23:34:12.262  INFO 15529 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-12 23:34:12.386  INFO 15529 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-12 23:34:12.480  INFO 15529 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-12 23:34:12.482  INFO 15529 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-12 23:34:12.529  INFO 15529 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-12 23:34:12.674  INFO 15529 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table ad_pic if exists
+Hibernate: drop table advertisement if exists
+Hibernate: drop table picture if exists
+Hibernate: create table ad_pic (ad_id integer not null, pic_id integer not null)
+Hibernate: create table advertisement (id integer generated by default as identity, description varchar(255) not null, garden_size integer, house_size integer, irrelevant_from bigint, score integer, typology varchar(255) not null, primary key (id))
+Hibernate: create table picture (id integer generated by default as identity, quality varchar(255) not null, url varchar(255) not null, primary key (id))
+Hibernate: alter table ad_pic add constraint FK7d77bljus9n8hat5l8ngl8los foreign key (pic_id) references picture
+Hibernate: alter table ad_pic add constraint FK1jg898m9n0ykgus3nnxx540w0 foreign key (ad_id) references advertisement
+2019-05-12 23:34:13.323  INFO 15529 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@f2b5fd6'
+2019-05-12 23:34:13.330  INFO 15529 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-12 23:34:14.240  INFO 15529 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-12 23:34:14.300  WARN 15529 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-12 23:34:14.662  INFO 15529 --- [    Test worker] c.j.a.service.AdvertisementServiceTest   : Started AdvertisementServiceTest in 9.86 seconds (JVM running for 10.867)
+2019-05-12 23:34:14.665  INFO 15529 --- [    Test worker] com.jmbg.advertisement.DBInit            : Starting DB Init!
+2019-05-12 23:34:14.665  INFO 15529 --- [    Test worker] com.jmbg.advertisement.DBInit            : Loading Pictures
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: insert into picture (id, quality, url) values (null, ?, ?)
+2019-05-12 23:34:14.808  INFO 15529 --- [    Test worker] com.jmbg.advertisement.DBInit            : Number of pictures created: 7
+2019-05-12 23:34:14.808  INFO 15529 --- [    Test worker] com.jmbg.advertisement.DBInit            : Loading Advertisements
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+Hibernate: select picture0_.id as id1_2_0_, picture0_.quality as quality2_2_0_, picture0_.url as url3_2_0_ from picture picture0_ where picture0_.id=?
+2019-05-12 23:34:14.843  INFO 15529 --- [    Test worker] com.jmbg.advertisement.DBInit            : Number of advertisements created: 8
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
