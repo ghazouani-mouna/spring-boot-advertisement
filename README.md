@@ -17,8 +17,8 @@ This service manage information about advertisements.
 - Calculate the score of an ad based on its characteristics.
 
 ## Technologies
-* [H2](https://www.mongodb.com)
-* [Spring Boot](http://expressjs.com/)
+* [H2](https://www.h2database.com/html/main.html)
+* [Spring Boot](https://spring.io/projects/spring-boot)
 
 ## Entities
 
