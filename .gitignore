@@ -3,4 +3,4 @@
 .gradle
 
 # Ignore build folder
-.build
+build
