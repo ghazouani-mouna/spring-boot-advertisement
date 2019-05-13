@@ -84,11 +84,13 @@ Request result can be filtered using following query params:
 > Example: Retrieve irrelevants advertisement order by typology asc:
 `/api/advertisement/all?show=irrelevants&sort=typology:asc`
 
-
-
 #### GET /api/advertisement/calculate-scores
 With this endpoint all advertisements score is calculated in request time.
 > Only registered users with role QUALITY_USER can be perform this action.
+
+
+#### Postman
+Postman collection have been included within the code: [Postman Collection](PostmanCollection.json)
 
 ## Usage
 
