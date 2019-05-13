@@ -66,6 +66,8 @@ Request result can be sorted using following query param:
 
 #### GET /api/advertisement/all
 With this endpoint list of all advertisement can be retrieve.
+> Only registered users with role QUALITY_USER can be perform this action.
+
 Request result can be filtered using following query params:
 - `show`: In order to retrieve all advertisement, only relevants or only irrelevants:
     - `values: [all, relevants, irrelevants]. Default all.`
@@ -79,13 +81,14 @@ Request result can be filtered using following query params:
     - `order`: Order Type
         - `values: [desc, asc]. Default desc`
 
-    
 > Example: Retrieve irrelevants advertisement order by typology asc:
 `/api/advertisement/all?show=irrelevants&sort=typology:asc`
 
+
+
 #### GET /api/advertisement/calculate-scores
 With this endpoint all advertisements score is calculated in request time.
-
+> Only registered users with role QUALITY_USER can be perform this action.
 
 ## Usage
 
@@ -115,3 +118,8 @@ $ gradle clean build
 $ docker build -t jmbg/advertisement .      
 $ docker run -p 8080:8080 jmbg/advertisement
 ```
+
+#### Demo Users
+In order to test security in differents endpoints, we create two users in memory:
+- `user/password`: Normal user with roles [ `USER` ].
+- `qualityUser/password`: Quality user, with roles [ `USER`, `QUALITY_USER` ]

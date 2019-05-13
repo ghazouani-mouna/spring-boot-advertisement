@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  version: 1.0.0-SNAPSHOT
+  version: 0.1.0-SNAPSHOT
   title: Advertisement svc
   description: Advertisement Management Service
 servers:
@@ -23,8 +23,10 @@ paths:
   /advertisement/all:
     get:
       tags: [ Advertisment ]
-      summary: 'Get irrelevants advertisements'
-      description: 'Get advertisements list'
+      summary: 'Get all advertisements'
+      description: 'Get advertisements list. Role Required QUALITY_USER'
+      security:
+        - basicAuth: []
       parameters:
         - $ref: '#/components/parameters/show'
         - $ref: '#/components/parameters/sort'
@@ -37,13 +39,19 @@ paths:
     get:
       tags: [ Advertisment ]
       summary: 'Get advertisements with recalculated scores'
-      description: 'Get advertisements with score recalculated in request time'
+      description: 'Get advertisements with score recalculated in request time. Role Required QUALITY_USER'
+      security:
+        - basicAuth: []
       responses:
         200:
           $ref: '#/components/responses/AdvertisementsScoresArray'
         500:
           $ref: '#/components/responses/ServerError'
 components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
   parameters:
     show:
       name: show
